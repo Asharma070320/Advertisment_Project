@@ -28,11 +28,11 @@ const Home = () => {
       <BannerNew/>
       <Cards/>
       <Card2 />
-      <StudioCard />
-      <TrendingCard />
+      {/* <StudioCard />
+      <TrendingCard /> */}
       <AdvertisingPartner/>
       <ClientCarousel/>
-      <Faq/>
+      {/* <Faq/> */}
       <Footer/>
       {/* <Floating /> */}
       {/* <Banner /> */}

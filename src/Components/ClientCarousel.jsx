@@ -2,18 +2,18 @@ import React from "react";
 
 const ClientCarousel = () => {
   const clients = [
-    { name: "Liebherr", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Liebherr_logo.svg" },
-    { name: "Hitachi", logo: "https://upload.wikimedia.org/wikipedia/commons/1/10/Hitachi_logo.svg" },
-    { name: "Honda", logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Honda_logo_%28Honda%29.svg" },
+    { name: "Liebherr", logo: "https://www.excellentpublicity.com/assets/clientle/liebherr.png" },
+    { name: "Hitachi", logo: "https://www.excellentpublicity.com/assets/clientle/hitachi.png" },
+    { name: "Honda", logo: "https://www.excellentpublicity.com/assets/clientle/honda.png" },
     { name: "Google", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" },
-    { name: "Swiggy", logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Swiggy_logo_2019.png" },
-    { name: "Hero", logo: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Hero_Motocorp_logo.png" },
-    { name: "Sophos", logo: "https://upload.wikimedia.org/wikipedia/commons/9/90/Sophos_logo.svg" },
-    { name: "Casio", logo: "https://upload.wikimedia.org/wikipedia/commons/4/43/Casio_logo.svg" },
-    { name: "Red Chilli", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Red_Chillies_Entertainment_logo.svg" },
-    { name: "Flipkart", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flipkart_logo_2018.svg" },
-    { name: "Aditya Birla", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Aditya_Birla_Group_logo.svg" },
-    { name: "Wipro", logo: "https://upload.wikimedia.org/wikipedia/commons/7/7d/Wipro_logo.png" },
+    { name: "Swiggy", logo: "https://www.excellentpublicity.com/assets/clientle/swiggy.png" },
+    { name: "Hero", logo: "https://www.excellentpublicity.com/assets/clientle/hero.png" },
+    { name: "Sophos", logo: "https://www.excellentpublicity.com/assets/clientle/sophos.png" },
+    { name: "Casio", logo: "https://www.excellentpublicity.com/assets/clientle/casio.png" },
+    { name: "Red Chilli", logo: "https://www.excellentpublicity.com/assets/clientle/red-chillies-entertainment.png" },
+    { name: "Flipkart", logo: "https://www.excellentpublicity.com/assets/clientle/flipkart.png" },
+    { name: "Aditya Birla", logo: "https://www.excellentpublicity.com/assets/clientle/abfrl.png" },
+    { name: "Wipro", logo: "https://www.excellentpublicity.com/assets/clientle/wipro-enterprises-pvt-ltd.png" },
   ];
 
   return (
@@ -23,7 +23,7 @@ const ClientCarousel = () => {
         <p className="text-gray-500">Brands that trust us for successful marketing strategies.</p>
       </div>
       <div className="overflow-hidden">
-        <div className="flex space-x-12 animate-marquee">
+        <div className="flex space-x-24 animate-marquee">
           {clients.map((client, index) => (
             <div key={index} className="flex-shrink-0">
               <img

@@ -1,7 +1,16 @@
 import { useState } from "react";
-import { FaSearch, FaShoppingCart, FaUser, FaBars, FaTimes, FaStore, FaMusic } from "react-icons/fa";
+import {
+  FaSearch,
+  FaShoppingCart,
+  FaUser,
+  FaBars,
+  FaTimes,
+  FaStore,
+  FaMusic,
+} from "react-icons/fa";
 import { ImVideoCamera } from "react-icons/im";
 import { IoMenu } from "react-icons/io5";
+import { GiCeilingLight } from "react-icons/gi";
 
 const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -39,7 +48,7 @@ const Header = () => {
             type="text"
             placeholder="Search Media for Advertising"
             className={`w-full h-10 px-10 rounded-3xl placeholder-gray-200 focus:ring-2 focus:ring-red-400 border-none text-lg transition duration-200 ${
-              isHovered ? "bg-teal-600 text-black" : "bg-teal-400 text-black"
+              isHovered ? "bg-teal-600 text-black" : "bg-teal-500 text-black"
             }`}
           />
           <span
@@ -47,37 +56,41 @@ const Header = () => {
               isHovered ? "text-gray-100" : "text-white"
             }`}
           >
-            <FaSearch  className="text-black"/>
+            <FaSearch className="text-black" />
           </span>
         </div>
 
         {/* Buttons */}
-        <div className="flex items-center space-x-4 md:space-x-8 text-lg text-teal-400">
+        <div className="flex items-center space-x-4 md:space-x-8 text-lg text-black">
           {/* Spotlight Button */}
-          <button className="flex items-center font-medium">
+          <button className="flex items-center font-medium hover:text-teal-500 hover:underline">
+            <GiCeilingLight className="mr-2 text-xl" />
             <span className="hidden md:inline">Spotlight</span>
           </button>
 
           {/* Store Button */}
-          <button className="flex items-center font-medium">
+          <button className="flex items-center font-medium hover:text-teal-500 hover:underline">
             <FaStore className="mr-2 text-xl" />
             <span className="hidden md:inline">Store</span>
           </button>
 
           {/* Studio Button */}
-          <button className="flex items-center font-medium">
+          <button className="flex items-center font-medium hover:text-teal-500 hover:underline">
             <ImVideoCamera className="mr-2 text-xl" />
             <span className="hidden md:inline">Studio</span>
           </button>
 
           {/* Login Button */}
-          <button onClick={openModal} className="flex items-center font-medium">
+          <button
+            onClick={openModal}
+            className="flex items-center font-medium hover:text-teal-500 hover:underline"
+          >
             <FaUser className="mr-2 text-xl" />
             <span className="hidden md:inline">Login</span>
           </button>
 
           {/* Menu Button */}
-          <button className="flex items-center font-medium">
+          <button className="flex items-center font-medium hover:text-teal-500 hover:underline">
             <IoMenu className="mr-2 text-xl" />
           </button>
 
