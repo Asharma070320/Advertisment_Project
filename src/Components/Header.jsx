@@ -89,12 +89,12 @@ const Header = () => {
             <span className="hidden md:inline">Login</span>
           </button>
 
-          {/* Menu Button */}
+          {/* Menu Button (hidden on large screens) */}
           <button className="flex items-center font-medium hover:text-teal-500 hover:underline ">
             <IoMenu className="mr-2 text-xl" />
           </button>
 
-          {/* Burger Menu Icon */}
+          {/* Burger Menu Icon (visible only on mobile) */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-white text-3xl md:hidden"
