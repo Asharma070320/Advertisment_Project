@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaPhone, FaWhatsapp, FaYoutube, FaInstagram, FaTwitter, FaLinkedin, FaFacebook, FaTelegram } from 'react-icons/fa';
+import apple from '../apple.png'
 
 const Footer = () => {
   return (
@@ -106,6 +107,14 @@ const Footer = () => {
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" 
                 alt="Get it on Google Play" 
                 className="max-w-28 h-auto"
+              />
+            </a>
+            {/* Download on the App Store */}
+            <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">
+              <img 
+                src={apple} 
+                alt="Get it on Google Play" 
+                className="max-w-28 h-auto mt-2"
               />
             </a>
           </div>
