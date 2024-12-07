@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header className="bg-white text-white shadow-md">
       {/* Top Bar */}
-      <div className="flex items-center justify-between px-4 lg:px-12 py-4">
+      <div className="flex items-center justify-between px-4 lg:px-12 py-4 border-b-2">
         {/* Logo */}
         <div className="flex items-center bg-white rounded-md p-2">
           <img
@@ -38,9 +38,9 @@ const Header = () => {
           />
         </div>
 
-        {/* Search Bar */}
+        {/* Search Bar (hidden on small screens) */}
         <div
-          className="relative w-full max-w-sm"
+          className="relative w-full max-w-sm hidden md:block"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -48,7 +48,7 @@ const Header = () => {
             type="text"
             placeholder="Search Media for Advertising"
             className={`w-full h-10 px-10 rounded-3xl placeholder-gray-200 focus:ring-2 focus:ring-red-400 border-none text-lg transition duration-200 ${
-              isHovered ? "bg-teal-600 text-black" : "bg-teal-500 text-black"
+              isHovered ? "bg-teal-600 text-black" : "bg-teal-500 text-black "
             }`}
           />
           <span
@@ -60,7 +60,7 @@ const Header = () => {
           </span>
         </div>
 
-        {/* Buttons */}
+        {/* Buttons (hidden on mobile) */}
         <div className="flex items-center space-x-4 md:space-x-8 text-lg text-black">
           {/* Spotlight Button */}
           <button className="flex items-center font-medium hover:text-teal-500 hover:underline">
@@ -90,7 +90,7 @@ const Header = () => {
           </button>
 
           {/* Menu Button */}
-          <button className="flex items-center font-medium hover:text-teal-500 hover:underline">
+          <button className="flex items-center font-medium hover:text-teal-500 hover:underline ">
             <IoMenu className="mr-2 text-xl" />
           </button>
 

@@ -93,17 +93,17 @@ const Cards = () => {
                 {/* Book Now Button */}
                 <button
                   onClick={() => openModal("book", card)}
-                  className="text-white bg-[#706768] rounded-full p-2 shadow hover:bg-[#524c4d] transition"
+                  className="text-white bg-[#706768] rounded-full p-1.5 shadow hover:bg-[#524c4d] transition text-sm"
                 >
-                  <CiBookmarkPlus />
+                  {/* <CiBookmarkPlus /> */} Book Now
                 </button>
 
                 {/* More Button */}
                 <button
                   onClick={() => openModal("inquiry", card)}
-                  className="text-white bg-[#cf4d53] rounded-full p-2 shadow hover:bg-[#a8373c] transition"
+                  className="text-white bg-[#cf4d53] rounded-full p-2 shadow hover:bg-[#a8373c] transition text-sm"
                 >
-                  <FaSearchPlus className="text-lg" />
+                  {/* <FaSearchPlus className="text-lg" /> */} Inquiry
                 </button>
               </div>
             </div>

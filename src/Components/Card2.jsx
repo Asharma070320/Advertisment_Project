@@ -58,7 +58,7 @@ const Card2 = () => {
       <h1 className="text-2xl font-bold mb-6">Store</h1>
 
       {/* Grid Layout for Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {cardData.map((card, index) => (
           <div
             key={index}
@@ -93,17 +93,17 @@ const Card2 = () => {
                 {/* Book Now Button */}
                 <button
                   onClick={() => openModal("book", card)}
-                  className="text-white bg-[#706768] rounded-full p-2 shadow hover:bg-[#524c4d] transition"
+                  className="text-white bg-[#706768] rounded-full p-1.5 shadow hover:bg-[#524c4d] transition text-sm"
                 >
-                  <CiBookmarkPlus />
+                  {/* <CiBookmarkPlus /> */} Book Now
                 </button>
 
                 {/* More Button */}
                 <button
                   onClick={() => openModal("inquiry", card)}
-                  className="text-white bg-[#cf4d53] rounded-full p-2 shadow hover:bg-[#a8373c] transition"
+                  className="text-white bg-[#cf4d53] rounded-full p-2 shadow hover:bg-[#a8373c] transition text-sm"
                 >
-                  <FaSearchPlus className="text-lg" />
+                  {/* <FaSearchPlus className="text-lg" /> */} Inquiry
                 </button>
               </div>
             </div>
